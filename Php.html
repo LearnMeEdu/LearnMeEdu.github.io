@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!-- SEO Meta Tags -->
+<meta name="description" 
+    content="Learn PHP programming with our comprehensive tutorial covering OOP concepts, database integration, security practices, and more. Perfect for beginners and intermediate developers looking to master server-side web development." />
+<meta name="keywords"
+    content="PHP tutorial, Learn PHP, PHP programming, PHP OOP, MySQL PHP, PHP security, PHP APIs, web development, server-side scripting, PHP for beginners, PHP basics, database programming, PHP superglobals, PHP sessions, shankar aryal, Nepal, learnme php" />
+<link rel="canonical" href="https://LearnMeEdu.github.io/Php.html" />
+
+<!-- Open Graph Meta Tags for Social Media -->
+<meta property="og:title" content="LearnMe - Comprehensive PHP Programming Tutorial" />
+<meta property="og:description"
+    content="Master PHP programming with our detailed guide covering OOP, databases, security, APIs, and best practices for modern web development." />
+<meta property="og:url" content="https://LearnMeEdu.github.io/Php.html" />
+<meta property="og:image"
+    content="https://LearnMeEdu.github.io/Asssets/img/Php_share.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="LearnMe" />
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="LearnMe - Complete PHP Programming Tutorial" />
+<meta name="twitter:description"
+    content="Learn modern PHP development from basics to advanced topics including OOP, database integration, security, and API development." />
+<meta name="twitter:image"
+    content="https://LearnMeEdu.github.io/Asssets/img/Php_share.png" />
+
+<!-- Additional Meta Tags -->
+<meta name="author" content="Shankar Aryal" />
+<meta name="robots" content="index, follow" />
+<meta name="language" content="English" />
+
+<!-- Icon -->
+<link rel="icon" href="Asssets/icon/favicon.ico" type="image/x-icon" />
+    <!--Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;l,300;l,400;l,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="Asssets/css/style.css" >
+    <link rel="stylesheet" href="Asssets/css/footter.css">
+     <link rel="stylesheet" href="Asssets/css/content.css">
+    <title>LearnMe/CSS</title>
+  </head>
+  <body>
+   <header>
+        <nav class="container">
+            <div class="logo">
+                <img src="Asssets/icon/favicon.ico" alt="LearnMe Logo" width="40" height="40">
+                <h1>LearnMe</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="HTML.html">HTML</a></li>
+                <li><a href="CSS.html">CSS</a></li>
+                <li><a href="JS.html">JavaScript</a></li>
+                <li><a href="Php.html">PHP</a></li>
+                <li><a href="Aboutme.html">About</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+   <main class="container">
+    <aside class="sidebar">
+        <ul>
+            <li><a href="#section1">Introduction</a></li>
+            <li><a href="#section2">OOP Concepts in PHP</a></li>
+            <li><a href="#section3">Data Types</a></li>
+            <li><a href="#section4">Variables and Constants</a></li>
+            <li><a href="#section5">Control Structures</a></li>
+            <li><a href="#section6">Functions</a></li>
+            <li><a href="#section7">Superglobals</a></li>
+            <li><a href="#section8">Error Handling</a></li>
+            <li><a href="#section9">PHP with Databases</a></li>
+            <li><a href="#section10">Sessions and Cookies</a></li>
+            <li><a href="#section11">File Handling</a></li>
+            <li><a href="#section12">Security Best Practices</a></li>
+            <li><a href="#section13">Working with APIs</a></li>
+        </ul>
+    </aside>
+
+    <div class="content">
+        <section id="section1" class="content-section">
+            <h2>Introduction</h2>
+            <p>PHP is a widely-used, open-source, server-side scripting language. It is especially suited for web development and can be embedded into HTML.</p>
+        </section>
+
+        <section id="section2" class="content-section">
+            <h2>OOP Concepts in PHP</h2>
+            <p>Object-Oriented Programming (OOP) in PHP enables developers to organize code into reusable classes and objects. Key concepts include:</p>
+            <ul>
+                <li><strong>Encapsulation</strong>: Restricting access to certain parts of an object.</li>
+                <li><strong>Inheritance</strong>: A class can inherit properties and methods from another class.</li>
+                <li><strong>Polymorphism</strong>: A method can have different behaviors based on the object that invokes it.</li>
+                <li><strong>Abstraction</strong>: Defining abstract methods in a class, implemented by child classes.</li>
+            </ul>
+            <pre><code>
+class Car {
+    public $color;
+    function __construct($color) {
+        $this->color = $color;
+    }
+}
+            </code></pre>
+        </section>
+
+        <section id="section3" class="content-section">
+            <h2>Data Types in PHP</h2>
+            <p>PHP supports several data types, including:</p>
+            <ul>
+                <li><strong>String</strong>: A sequence of characters.</li>
+                <li><strong>Integer</strong>: Non-decimal numbers.</li>
+                <li><strong>Float</strong>: Decimal numbers.</li>
+                <li><strong>Boolean</strong>: Either <code>true</code> or <code>false</code>.</li>
+                <li><strong>Array</strong>: A collection of values.</li>
+                <li><strong>Object</strong>: An instance of a class.</li>
+                <li><strong>NULL</strong>: Represents a variable with no value.</li>
+            </ul>
+        </section>
+
+        <section id="section4" class="content-section">
+            <h2>Variables and Constants</h2>
+            <p>Variables in PHP are declared with a <code>$</code> sign and can hold various data types. Constants are immutable and defined using the <code>define()</code> function.</p>
+            <pre><code>
+$var = "Hello World!";
+define("PI", 3.14);
+            </code></pre>
+        </section>
+
+        <section id="section5" class="content-section">
+            <h2>Control Structures (Conditions and Loops)</h2>
+            <p>PHP offers several control structures to manage the flow of the program:</p>
+            <ul>
+                <li><strong>If/Else Statements</strong>: Conditional logic to execute code based on certain conditions.</li>
+                <li><strong>Switch Statements</strong>: Similar to <code>if</code> but for multiple conditions.</li>
+                <li><strong>Loops</strong>:
+                    <ul>
+                        <li><code>for</code> loop</li>
+                        <li><code>while</code> loop</li>
+                        <li><code>foreach</code> loop for arrays</li>
+                        <li><code>do...while</code> loop</li>
+                    </ul>
+                </li>
+            </ul>
+            <pre><code>
+for ($i = 0; $i < 5; $i++) {
+    echo $i;
+}
+            </code></pre>
+        </section>
+
+        <section id="section6" class="content-section">
+            <h2>Functions in PHP</h2>
+            <p>Functions in PHP are reusable blocks of code that perform specific tasks. You can define custom functions or use built-in PHP functions.</p>
+            <pre><code>
+function greet($name) {
+    return "Hello " . $name;
+}
+            </code></pre>
+        </section>
+
+        <section id="section7" class="content-section">
+            <h2>Superglobals</h2>
+            <p>PHP superglobals are predefined variables that are accessible globally throughout the script. Common superglobals include:</p>
+            <ul>
+                <li><code>$_GET</code>: Retrieve data sent via HTTP GET.</li>
+                <li><code>$_POST</code>: Retrieve data sent via HTTP POST.</li>
+                <li><code>$_SESSION</code>: Store user session data.</li>
+                <li><code>$_COOKIE</code>: Store small pieces of data in the user's browser.</li>
+            </ul>
+        </section>
+
+        <section id="section8" class="content-section">
+            <h2>Error Handling in PHP</h2>
+            <p>PHP provides various ways to handle errors and exceptions:</p>
+            <ul>
+                <li><strong>Try-Catch Blocks</strong>: Handle exceptions in PHP code.</li>
+                <li><strong>Custom Error Handlers</strong>: Define custom error handling using <code>set_error_handler()</code>.</li>
+                <li><strong>Error Reporting</strong>: Adjust the level of error reporting using <code>error_reporting()</code>.</li>
+            </ul>
+        </section>
+
+        <section id="section9" class="content-section">
+            <h2>Connecting PHP with Databases (MySQL)</h2>
+            <p>PHP can interact with MySQL databases using:</p>
+            <ul>
+                <li><strong>MySQLi</strong>: Improved MySQL extension for interacting with MySQL databases.</li>
+                <li><strong>PDO (PHP Data Objects)</strong>: A unified API for different database systems.</li>
+            </ul>
+            <pre><code>
+$conn = new mysqli("localhost", "username", "password", "database");
+            </code></pre>
+        </section>
+
+        <section id="section10" class="content-section">
+            <h2>Sessions and Cookies in PHP</h2>
+            <p>Sessions store user information across multiple pages, while cookies store small pieces of data in the user's browser.</p>
+            <pre><code>
+session_start();
+$_SESSION["username"] = "Shankar";
+            </code></pre>
+        </section>
+
+        <section id="section11" class="content-section">
+            <h2>File Handling in PHP</h2>
+            <p>PHP allows you to handle files through reading, writing, and uploading:</p>
+            <pre><code>
+$file = fopen("testfile.txt", "r");
+            </code></pre>
+        </section>
+
+        <section id="section12" class="content-section">
+            <h2>Security Best Practices in PHP</h2>
+            <p>Ensure security by following these best practices:</p>
+            <ul>
+                <li><strong>SQL Injection Prevention</strong>: Use prepared statements to avoid SQL injection.</li>
+                <li><strong>Cross-Site Scripting (XSS) Prevention</strong>: Sanitize user input using <code>htmlspecialchars()</code>.</li>
+                <li><strong>CSRF Protection</strong>: Use CSRF tokens for forms to prevent cross-site request forgery.</li>
+            </ul>
+        </section>
+
+        <section id="section13" class="content-section">
+            <h2>Working with APIs in PHP</h2>
+            <p>PHP can work with external APIs using <code>curl</code> or the <code>file_get_contents()</code> function.</p>
+            <pre><code>
+$json = file_get_contents("https://api.example.com/data");
+$data = json_decode($json);
+            </code></pre>
+        </section>
+    </div>
+</main>
+
+    <footer>
+      <div class="row primary">
+        <div class="column about">
+      
+        <h3>Learn me</h3>
+      
+         <p>
+            Hi , I am Shankar Aryal  computer science student this is simple demonstration of website where you can know about me ,check some simple mathematical problems and about form validation and learn abouts C programing.
+        </p>
+      
+        <div class="social">
+          <i class="fa-brands fa-facebook-square"></i>
+          <i class="fa-brands fa-instagram-square"></i>
+          <i class="fa-brands fa-twitter-square"></i>
+          <i class="fa-brands fa-youtube-square"></i>
+          <i class="fa-brands fa-whatsapp-square"></i>
+        </div>
+      </div>
+  
+      <div class="column links" id="xv">
+        <h3>Some Links</h3>
+         <ul id="I">
+          <li>
+           <a href="Php.html">Php</a>
+          </li>
+          <li >
+           <a href="form.html">Form</a>
+          </li>
+          <li >
+          <a href="Cprograming.html"></a>
+          </li>
+          <li >
+          <a href="JS.html">JS</a>
+          </li>
+        </ul>
+        </div>
+      <div class="column subscribe" id="v">
+       <h3>For Querries Contact us in</h3>
+       <div>
+        <input type="text" name="feeds" width="30%"placeholder="Write your problems and feedbacks here" />
+        <button>Submit</button>
+       </div>
+      </div>
+      
+      </div>
+      
+      <div class="row copyright">
+        <div class="footer-menu">
+      
+            <a href="index.html">Home</a>
+            <a href="HTML.html">HTML</a>
+            <a href="CSS.html">CSS</a>
+            <a href="JS.html">JS</a>
+            <a href="Php.html">PHP</a>
+            <a href="about.html">About me</a>
+            <a href="form.html">Form</a>
+      
+        </div>
+         <p>Copyright &copy; 202l Shankar Aryal  ❤️</p>
+      </div>
+      </footer>
+  
+    
+          <script src="Asssets/js/nav.js"></script>
+  </body>
+</html>

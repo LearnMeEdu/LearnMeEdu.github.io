@@ -1,0 +1,150 @@
+/* footer.css */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 16px;
+    padding-top: 3rem;
+}
+
+.row {
+    padding: 1em 1em;
+}
+
+.row.primary {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2em;
+    min-height: 10em;
+}
+
+footer h3 {
+    width: 100%;
+    text-align: left;
+    color: white;
+    font-size: 1.4em;
+    white-space: nowrap;
+    margin-bottom: 1em;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+footer li:not(:first-child) {
+    margin-top: 0.8em;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+footer ul li a:hover {
+    color: var(--secondary-color);
+}
+
+.about p {
+    text-align: justify;
+    line-height: 2;
+    margin: 0;
+}
+
+footer input,
+footer button {
+    font-size: 1em;
+    padding: 1em;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+footer button {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+footer button:hover {
+    background-color: #fff;
+    transform: translateY(-3px);
+}
+
+.social {
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.4em;
+    flex-direction: row;
+    margin-top: 0.5em;
+}
+
+.social i {
+    color: white;
+    transition: var(--transition);
+}
+
+.social i:hover {
+    color: var(--secondary-color);
+    transform: scale(1.1);
+}
+
+.copyright {
+    padding: 2em 1em;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.footer-menu {
+    float: left;
+    margin-top: 10px;
+}
+
+.footer-menu a {
+    color: #cfd2d6;
+    padding: 6px;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.footer-menu a:hover {
+    color: var(--secondary-color);
+}
+
+.copyright p {
+    font-size: 0.9em;
+    text-align: right;
+}
+
+@media screen and (max-width: 850px) {
+    .row.primary {
+        grid-template-columns: 1fr;
+    }
+    .column {
+        padding: 0 1em;
+        margin-bottom: 1em;
+    }
+    .footer-menu,
+    .copyright p {
+        text-align: center;
+        float: none;
+    }
+    .footer-menu {
+        margin-bottom: 10px;
+    }
+    .copyright {
+        padding: 2em;
+    }
+}
