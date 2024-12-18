@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <!-- Structured Error Metadata -->
+    <meta name="error-code" content="404">
+    <meta name="error-type" content="page-not-found">
+    <title>404 - Page Not Found | LearnMeEdu</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #0A2342;
+            --secondary-color: #2CA4A4;
+            --text-primary: #1F2937;
+            --bg-light: #F9FAFB;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-primary);
+            line-height: 1.6;
+            font-weight: 400;
+        }
+
+        .error-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 2rem;
+            background: linear-gradient(to right, #F5F7FA 0%, #F5F7FA 100%);
+        }
+
+        .error-wrapper {
+            width: 100%;
+            max-width: 1100px;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 50px 100px -20px rgba(50, 50, 93, 0.075),
+                        0 30px 60px -30px rgba(0, 0, 0, 0.055);
+            display: flex;
+            overflow: hidden;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .error-content {
+            flex: 5;
+            padding: 4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .error-illustration {
+            flex: 4;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .error-number {
+            position: absolute;
+            font-size: 20rem;
+            font-weight: 900;
+            color: rgba(255,255,255,0.05);
+            user-select: none;
+            z-index: 1;
+            line-height: 1;
+        }
+
+        .error-icon {
+            position: relative;
+            z-index: 2;
+            width: 300px;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255,255,255,0.05);
+            border-radius: 50%;
+        }
+
+        .error-icon svg {
+            width: 150px;
+            height: 150px;
+            color: rgba(255,255,255,0.7);
+            stroke-width: 1;
+        }
+
+        .error-heading {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            letter-spacing: -0.025em;
+        }
+
+        .error-description {
+            color: #4A5568;
+            margin-bottom: 2rem;
+            max-width: 520px;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-size: 0.875rem;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .network-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.03;
+            pointer-events: none;
+            background-image: 
+                linear-gradient(0deg, transparent 24%, rgba(0,0,0,0.05) 25%, rgba(0,0,0,0.05) 26%, transparent 27%, transparent 74%, rgba(0,0,0,0.05) 75%, rgba(0,0,0,0.05) 76%, transparent 77%, transparent),
+                linear-gradient(90deg, transparent 24%, rgba(0,0,0,0.05) 25%, rgba(0,0,0,0.05) 26%, transparent 27%, transparent 74%, rgba(0,0,0,0.05) 75%, rgba(0,0,0,0.05) 76%, transparent 77%, transparent);
+            background-size: 50px 50px;
+        }
+
+        @media (max-width: 1024px) {
+            .error-wrapper {
+                flex-direction: column;
+            }
+
+            .error-content, .error-illustration {
+                flex: none;
+                width: 100%;
+            }
+
+            .error-number {
+                font-size: 12rem;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .error-content {
+                padding: 2rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-wrapper">
+            <div class="error-content">
+                <h1 class="error-heading">Page Not Available</h1>
+                <p class="error-description">
+                    The requested page cannot be found. This may be due to a temporary system maintenance, 
+                    a changed URL, or an internal routing issue. Please verify the web address or contact 
+                    our support team if the problem persists.
+                </p>
+                <div class="cta-buttons">
+                    <a href="/" class="btn btn-primary">Return to Dashboard</a>
+                    <a href="/support" class="btn btn-secondary">Contact Support</a>
+                </div>
+            </div>
+            <div class="error-illustration">
+                <div class="network-pattern"></div>
+                <div class="error-number">404</div>
+                <div class="error-icon">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
